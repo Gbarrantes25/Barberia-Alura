@@ -1,0 +1,319 @@
+body{
+    /*Aplico tipo de fuente externa a todo el body de la página*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #CCCCCC;
+    /*Espacio externo arriba/abajo de 20 px y 0 en los laterales*/
+    padding: 20px 0;
+}
+
+.caja{
+    /*Ancho*/
+    width: 940px;
+    /*Posición relativa*/
+    position: relative;
+    /*Margen interno de 0 para superior/inferior y automático para los laterales*/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+/*Por defecto el display viene como "block". Le pono "inline" para que no ocupe el 100% de la página, sino el contenido de la lista*/
+nav li{
+    display: inline;
+    /*Espaciamiento interno; arriba, derecha, abajo e izquierda*/ 
+    margin: 0 0 0 15px;
+}
+
+
+/**/
+nav a{
+    /*Transformo el texto a mayúscula*/
+    text-transform: uppercase;
+    /*Le doy color al texto*/
+    color: black;
+    /*Le aplico negrita al texto*/
+    font-weight: bold;
+    /*Le asigno un tamaño*/
+    font-size: 22px;
+    /*Establezco un formato de texto subrayado */
+    text-decoration: none;
+}
+
+/*hover captura el movimiento del mouse. Le indicamos que cuando el mouse se situe encima del elemento de navegación, coloreé de rojo y de subrayado*/
+nav a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30PX 20PX;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}   
+
+.productos li:hover{
+    border-color: red;
+
+}
+
+.productos li:active{
+    border-color: blue;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+/*Si el mouse se ubica en productos li, aumenta el tamaño del texto al h2*/
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Aplicamos un margen arriba/abajo de 40px*/
+form{
+    margin: 40px 40px;
+}
+
+/*Bloqueamos el elemento label en la pantalla para que se alineen en vertical, aumentamos el tamaño del texto y ponemos un margen de 10px abajo*/
+form label, legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+/*Bloqueamos el elemento input  en la pantalla para que se alineen en vertical, ponemos un margen de 20px abajo, un espaciado interno de 10px arriba/abajo y 25px a los lados, también que ocupe un ancho de 50% de la pantalla.*/
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    /*Espaciamiento interno*/
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transition: 1s transform;
+    transform: scale(1.20);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+table{
+    margin: 40px 40px
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*-----------------------------CSS INDEX---------------------------------------------------------------------------------------------*/
+
+.banner{
+    /*Que el banner ocupe el 100% de ancho de la página*/
+    width: 100%;
+}
+
+.principal{
+    background: #FEFEFE;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+
+    /*Alinear texto al centro*/
+    text-align: center;
+
+    /*Multiplica 2 veces el tamaño de fuente padrón*/
+    font-size: 2em;
+
+    /*Separación por 1 vez el tamaño de fuente padrón*/
+    margin: 0 0 1em;
+
+    /*Cualquier configuración que venga después del titulo de la izquierda que lo limpie*/
+    clear: left;
+}
+
+.principal p{
+    /*Separación de párrafos por 1 vez el tamaño fuente padrón*/
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    /*Como la etiqueta strong no funciona, le damos negrita*/
+    font-weight: bold;
+}
+
+.principal em{
+    /*Como la etiqueta em no funciona, le damos un estilo itálico*/
+    font-style: italic;
+}
+
+.utensilios{
+    /*Permite hacer flotar un elemento dejando una sombra*/
+    float: left;
+    /*Ancho de imagen*/
+    width: 120px;
+    margin: 0 20px 35px 0;
+}
+
+.mapa p{
+    /*Damos un margen al párrafo y lo alineamos al centro*/
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa{
+    /*Damos un espaciado externo al mapa*/
+    padding: 3em;
+    /*Fondo con degradado lineal*/
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.diferenciales{
+    background: #888888;
+    padding: 3em 0;
+    
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.lista-diferenciales{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+
+}
+
+/*Pseudo clase para el primer item*/
+.Lista:first-child{
+    font-weight: bold;
+}
+
+.Lista{
+    line-height: 1.5;
+}
+
+.Lista::before{
+    content: "★";
+}
+
+.imagenDiferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px black;
+}
+
+/*Aplicando opacidad al pasar el mouse*/
+.imagenDiferenciales:hover{
+    opacity: 30%;
+}
+
+.video{
+    /*Ancho del video*/
+    width: 560px;
+    /*Margen 1em hacia arriba/abajo y centralizado a los laterales*/
+    margin: 1em auto;
+
+
+} 
+
+/*Permite trabajar con excepciones o con condiciones*/
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagenDiferenciales{
+        width: 100%;
+    }
+}   
